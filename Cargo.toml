@@ -1,0 +1,31 @@
+[package]
+name = "rcof"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.91"
+description = "A local Rust audio/video conferencing learning lab"
+repository = "https://github.com/ytp101/rcof"
+readme = "README.md"
+keywords = ["webrtc", "opus", "video", "learning", "conferencing"]
+
+[dependencies]
+anyhow = "1"
+axum = "0.8"
+bytes = "1"
+clap = { version = "4", features = ["derive"] }
+cpal = "=0.16.0"
+crossbeam-queue = "0.3"
+libc = "0.2"
+opus = "=0.3.1"
+reqwest = { version = "0.12", default-features = false, features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+uuid = { version = "1", features = ["v4"] }
+webrtc = "=0.14.0"
+
+eframe = { version = "=0.33.0", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }
+image = { version = "0.25", default-features = false, features = ["png"] }
+
+[profile.release]
+debug = 1

@@ -1,0 +1,82 @@
+{
+  "id": "b",
+  "elapsed_seconds": 20.603769291,
+  "tx_frames": 505,
+  "tx_audio_samples": 969600,
+  "rx_audio_samples": 969600,
+  "audio_packet_ms": 40,
+  "audio_target_bps": 24000,
+  "audio_complexity": 10,
+  "video_tx_frames": 101,
+  "video_loss_fraction": 0,
+  "video_quality_level": 0,
+  "video_quality_changes": 0,
+  "video_rx_frames": 101,
+  "video_tx_bytes": 44161,
+  "video_rx_bytes": 47687,
+  "video_tx_kbps": 17.14676547821378,
+  "video_rx_kbps": 18.515835360602807,
+  "video_backpressure_events": 0,
+  "video_encode": {
+    "p50_upper_us": 511,
+    "p95_upper_us": 1023,
+    "samples": 101
+  },
+  "video_ready_age": {
+    "p50_upper_us": 131071,
+    "p95_upper_us": 131071,
+    "samples": 101
+  },
+  "audio_late_samples": 0,
+  "audio_concealed_frames": 0,
+  "video_frame_to_decode": {
+    "p50_upper_us": 2047,
+    "p95_upper_us": 4095,
+    "samples": 101
+  },
+  "av_decode_skew": {
+    "p50_upper_us": 511,
+    "p95_upper_us": 2047,
+    "samples": 101
+  },
+  "transport_tx_bytes": 136130,
+  "transport_rx_bytes": 139614,
+  "transport_tx_kbps": 52.85634801180321,
+  "transport_rx_kbps": 54.209110198485966,
+  "source_rms_dbfs": -24.96579791147845,
+  "captured_samples": 0,
+  "rx_frames": 505,
+  "tx_opus_bytes": 60010,
+  "rx_opus_bytes": 60010,
+  "tx_opus_kbps": 23.30059093651885,
+  "rx_opus_kbps": 23.30059093651885,
+  "rx_non_silent_frames": 505,
+  "capture_dropped_samples": 0,
+  "capture_missing_samples": 0,
+  "playback_dropped_samples": 0,
+  "playback_missing_samples": 0,
+  "playback_callback_peak_samples": 0,
+  "playback_lead_peak_us": 0,
+  "capture_peak_samples": 0,
+  "playback_peak_samples": 0,
+  "sequence_gaps": 0,
+  "late_packets": 0,
+  "decode_errors": 0,
+  "device_errors": 0,
+  "encode": {
+    "p50_upper_us": 255,
+    "p95_upper_us": 255,
+    "samples": 505
+  },
+  "decode": {
+    "p50_upper_us": 63,
+    "p95_upper_us": 63,
+    "samples": 505
+  },
+  "frame_to_decode": {
+    "p50_upper_us": 2047,
+    "p95_upper_us": 2047,
+    "samples": 505
+  },
+  "outcome": "duration reached"
+}

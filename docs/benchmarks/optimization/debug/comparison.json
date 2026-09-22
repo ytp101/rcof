@@ -1,0 +1,58 @@
+[
+  {
+    "case": "original",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/debug/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-debug/original"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 77.41992252689211,
+    "b_to_a_steady_kbps": 76.05470811897861,
+    "a": {
+      "elapsed_seconds": 20.410151917,
+      "rx_audio_samples": 968640,
+      "rx_frames": 1009,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 20,
+      "audio_target_bps": 24000,
+      "encode": {
+        "p50_upper_us": 127,
+        "p95_upper_us": 127,
+        "samples": 1009
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.410152541,
+      "rx_audio_samples": 968640,
+      "rx_frames": 1009,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 20,
+      "audio_target_bps": 24000,
+      "encode": {
+        "p50_upper_us": 127,
+        "p95_upper_us": 127,
+        "samples": 1009
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 13.2,
+    "process_tree_peak_rss_mib": 154.0
+  }
+]

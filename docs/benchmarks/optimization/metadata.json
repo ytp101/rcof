@@ -1,0 +1,9 @@
+{
+  "architecture": "arm64",
+  "rustc": "rustc 1.91.0 (f8297e351 2025-10-28)",
+  "binary_sha256": "bfc929e2200cf94107ff6f619a3c47affac25fa9c36dcc173fe51a682a9dda59",
+  "cargo_lock_sha256": "9a97b3f4416d937da09a9edc2f31f3eef5021ebd8a00a96b9812c8a546b2cbe4",
+  "sources": "generated tone or silence; generated VP8 test pattern",
+  "network": "IPv4 loopback UDP relay; sandbox denies external networking",
+  "audio_complexity_default": 10
+}

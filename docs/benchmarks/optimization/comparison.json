@@ -1,0 +1,844 @@
+[
+  {
+    "case": "original",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/original"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 77.42596552938365,
+    "b_to_a_steady_kbps": 76.06064455982813,
+    "a": {
+      "elapsed_seconds": 20.403646458,
+      "rx_audio_samples": 969600,
+      "rx_frames": 1010,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 20,
+      "audio_target_bps": 24000,
+      "encode": {
+        "p50_upper_us": 127,
+        "p95_upper_us": 127,
+        "samples": 1010
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.403649583,
+      "rx_audio_samples": 969600,
+      "rx_frames": 1010,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 20,
+      "audio_target_bps": 24000,
+      "encode": {
+        "p50_upper_us": 127,
+        "p95_upper_us": 127,
+        "samples": 1010
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 4.8,
+    "process_tree_peak_rss_mib": 125.140625
+  },
+  {
+    "case": "efficient",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/efficient",
+      "--audio-profile",
+      "efficient"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 62.266518664920206,
+    "b_to_a_steady_kbps": 60.9784803546894,
+    "a": {
+      "elapsed_seconds": 20.603094125,
+      "rx_audio_samples": 969600,
+      "rx_frames": 505,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 40,
+      "audio_target_bps": 24000,
+      "encode": {
+        "p50_upper_us": 255,
+        "p95_upper_us": 255,
+        "samples": 505
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.603769291,
+      "rx_audio_samples": 969600,
+      "rx_frames": 505,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 40,
+      "audio_target_bps": 24000,
+      "encode": {
+        "p50_upper_us": 255,
+        "p95_upper_us": 255,
+        "samples": 505
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 3.8000000000000003,
+    "process_tree_peak_rss_mib": 125.109375
+  },
+  {
+    "case": "minimum",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/minimum",
+      "--audio-profile",
+      "minimum"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 48.63429408323644,
+    "b_to_a_steady_kbps": 47.34633926007647,
+    "a": {
+      "elapsed_seconds": 20.603079208,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 2047,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.603483291,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 2047,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 6.1,
+    "process_tree_peak_rss_mib": 125.09375
+  },
+  {
+    "case": "minimum-refresh2",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/minimum-refresh2",
+      "--audio-profile",
+      "minimum",
+      "--keyframe-seconds",
+      "2"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 45.680412431445525,
+    "b_to_a_steady_kbps": 44.81042997000195,
+    "a": {
+      "elapsed_seconds": 20.601972583,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 2047,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.602937834,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 2047,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 6.300000000000001,
+    "process_tree_peak_rss_mib": 125.375
+  },
+  {
+    "case": "minimum-64",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/minimum-64",
+      "--audio-profile",
+      "minimum",
+      "--keyframe-seconds",
+      "2",
+      "--kbps",
+      "64"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 45.18557385237748,
+    "b_to_a_steady_kbps": 44.44956993468996,
+    "a": {
+      "elapsed_seconds": 20.80168525,
+      "rx_audio_samples": 961920,
+      "rx_frames": 334,
+      "video_rx_frames": 100,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 2047,
+        "p95_upper_us": 2047,
+        "samples": 334
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.802008209,
+      "rx_audio_samples": 961920,
+      "rx_frames": 334,
+      "video_rx_frames": 90,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 2047,
+        "p95_upper_us": 2047,
+        "samples": 334
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 6.699999999999999,
+    "process_tree_peak_rss_mib": 125.546875
+  },
+  {
+    "case": "minimum-fast",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/minimum-fast",
+      "--audio-profile",
+      "minimum",
+      "--audio-complexity",
+      "5",
+      "--keyframe-seconds",
+      "2"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 31.6921546250045,
+    "b_to_a_steady_kbps": 30.822223579073935,
+    "a": {
+      "elapsed_seconds": 20.602768625,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 1023,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.601473667,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 101,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 1023,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 4.4,
+    "process_tree_peak_rss_mib": 125.3125
+  },
+  {
+    "case": "minimum-fast-64",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/minimum-fast-64",
+      "--audio-profile",
+      "minimum",
+      "--audio-complexity",
+      "5",
+      "--keyframe-seconds",
+      "2",
+      "--kbps",
+      "64"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 31.323047656640913,
+    "b_to_a_steady_kbps": 30.58708569667472,
+    "a": {
+      "elapsed_seconds": 20.802767875,
+      "rx_audio_samples": 961920,
+      "rx_frames": 334,
+      "video_rx_frames": 100,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 1023,
+        "samples": 334
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.802393084,
+      "rx_audio_samples": 961920,
+      "rx_frames": 334,
+      "video_rx_frames": 90,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 1023,
+        "samples": 334
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 4.9,
+    "process_tree_peak_rss_mib": 125.203125
+  },
+  {
+    "case": "minimum-48",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/minimum-48",
+      "--audio-profile",
+      "minimum",
+      "--keyframe-seconds",
+      "2",
+      "--kbps",
+      "48"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 42.29977924802705,
+    "b_to_a_steady_kbps": 41.91511458882907,
+    "a": {
+      "elapsed_seconds": 21.002870875,
+      "rx_audio_samples": 961920,
+      "rx_frames": 334,
+      "video_rx_frames": 10,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 2047,
+        "p95_upper_us": 2047,
+        "samples": 336
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 21.002826625,
+      "rx_audio_samples": 953280,
+      "rx_frames": 331,
+      "video_rx_frames": 9,
+      "sequence_gaps": 3,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 3,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 2047,
+        "samples": 335
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 6.65,
+    "process_tree_peak_rss_mib": 125.28125
+  },
+  {
+    "case": "audio-original",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/audio-original",
+      "--audio-only"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 54.44685661601106,
+    "b_to_a_steady_kbps": 54.44685661601106,
+    "a": {
+      "elapsed_seconds": 20.601346583,
+      "rx_audio_samples": 969600,
+      "rx_frames": 1010,
+      "video_rx_frames": 0,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 20,
+      "audio_target_bps": 24000,
+      "encode": {
+        "p50_upper_us": 127,
+        "p95_upper_us": 127,
+        "samples": 1010
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.6016205,
+      "rx_audio_samples": 969600,
+      "rx_frames": 1010,
+      "video_rx_frames": 0,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 20,
+      "audio_target_bps": 24000,
+      "encode": {
+        "p50_upper_us": 127,
+        "p95_upper_us": 127,
+        "samples": 1010
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 4.6,
+    "process_tree_peak_rss_mib": 60.453125
+  },
+  {
+    "case": "audio-minimum",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/audio-minimum",
+      "--audio-only",
+      "--audio-profile",
+      "minimum"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 25.818807363347567,
+    "b_to_a_steady_kbps": 25.818807363347567,
+    "a": {
+      "elapsed_seconds": 20.603258084,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 0,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 2047,
+        "p95_upper_us": 2047,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.603473125,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 0,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 2047,
+        "p95_upper_us": 2047,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 6.0,
+    "process_tree_peak_rss_mib": 60.578125
+  },
+  {
+    "case": "silence-original",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/silence-original",
+      "--audio-only",
+      "--source",
+      "silence"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 40.045050014648915,
+    "b_to_a_steady_kbps": 40.045050014648915,
+    "a": {
+      "elapsed_seconds": 20.602491,
+      "rx_audio_samples": 969600,
+      "rx_frames": 1010,
+      "video_rx_frames": 0,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 20,
+      "audio_target_bps": 24000,
+      "encode": {
+        "p50_upper_us": 255,
+        "p95_upper_us": 511,
+        "samples": 1010
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.601547333,
+      "rx_audio_samples": 969600,
+      "rx_frames": 1010,
+      "video_rx_frames": 0,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 20,
+      "audio_target_bps": 24000,
+      "encode": {
+        "p50_upper_us": 255,
+        "p95_upper_us": 511,
+        "samples": 1010
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 5.4,
+    "process_tree_peak_rss_mib": 60.546875
+  },
+  {
+    "case": "silence-minimum",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/silence-minimum",
+      "--audio-only",
+      "--source",
+      "silence",
+      "--audio-profile",
+      "minimum"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 11.48270957595203,
+    "b_to_a_steady_kbps": 11.48270957595203,
+    "a": {
+      "elapsed_seconds": 20.403172542,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 0,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 1023,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.40315425,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 0,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 1023,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 4.2,
+    "process_tree_peak_rss_mib": 60.546875
+  },
+  {
+    "case": "minimum-loss",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/minimum-loss",
+      "--audio-profile",
+      "minimum",
+      "--keyframe-seconds",
+      "2",
+      "--profile",
+      "loss"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 44.816033825208514,
+    "b_to_a_steady_kbps": 44.11138759081638,
+    "a": {
+      "elapsed_seconds": 20.601957625,
+      "rx_audio_samples": 970560,
+      "rx_frames": 337,
+      "video_rx_frames": 98,
+      "sequence_gaps": 0,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 0,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 2047,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.601985833,
+      "rx_audio_samples": 956160,
+      "rx_frames": 332,
+      "video_rx_frames": 92,
+      "sequence_gaps": 5,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 5,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 2047,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 6.199999999999999,
+    "process_tree_peak_rss_mib": 125.5
+  },
+  {
+    "case": "minimum-outage",
+    "command": [
+      "python3",
+      "scripts/check_p2.py",
+      "--binary",
+      "target/release/rcof",
+      "--quality",
+      "tiny",
+      "--duration",
+      "20",
+      "--output",
+      "runs/optimization-final/minimum-outage",
+      "--audio-profile",
+      "minimum",
+      "--keyframe-seconds",
+      "2",
+      "--profile",
+      "outage"
+    ],
+    "check_exit": 0,
+    "a_to_b_steady_kbps": 34.52951989738717,
+    "b_to_a_steady_kbps": 33.92415991772182,
+    "a": {
+      "elapsed_seconds": 20.603609875,
+      "rx_audio_samples": 826560,
+      "rx_frames": 287,
+      "video_rx_frames": 84,
+      "sequence_gaps": 50,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 1,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 2047,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "b": {
+      "elapsed_seconds": 20.6034645,
+      "rx_audio_samples": 826560,
+      "rx_frames": 287,
+      "video_rx_frames": 84,
+      "sequence_gaps": 50,
+      "decode_errors": 0,
+      "device_errors": 0,
+      "audio_concealed_frames": 1,
+      "audio_packet_ms": 60,
+      "audio_target_bps": 16000,
+      "encode": {
+        "p50_upper_us": 1023,
+        "p95_upper_us": 2047,
+        "samples": 337
+      },
+      "outcome": "duration reached"
+    },
+    "process_tree_median_cpu_percent": 5.5,
+    "process_tree_peak_rss_mib": 125.40625
+  }
+]

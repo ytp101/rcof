@@ -1,0 +1,14 @@
+/target/
+/runs/
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+# Machine-specific registry workaround and private development history stay local.
+/.cargo/config.toml
+/reports/evidence/
+/reports/0*.md
+!/reports/018-bandwidth-optimization.md
+!/reports/019-learning-report.md

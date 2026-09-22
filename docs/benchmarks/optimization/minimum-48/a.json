@@ -1,0 +1,82 @@
+{
+  "id": "a",
+  "elapsed_seconds": 21.002870875,
+  "tx_frames": 336,
+  "tx_audio_samples": 967680,
+  "rx_audio_samples": 961920,
+  "audio_packet_ms": 60,
+  "audio_target_bps": 16000,
+  "audio_complexity": 10,
+  "video_tx_frames": 101,
+  "video_loss_fraction": 42,
+  "video_quality_level": 0,
+  "video_quality_changes": 0,
+  "video_rx_frames": 10,
+  "video_tx_bytes": 40520,
+  "video_rx_bytes": 8005,
+  "video_tx_kbps": 15.434080508767591,
+  "video_rx_kbps": 3.049106971191623,
+  "video_backpressure_events": 0,
+  "video_encode": {
+    "p50_upper_us": 511,
+    "p95_upper_us": 1023,
+    "samples": 101
+  },
+  "video_ready_age": {
+    "p50_upper_us": 262143,
+    "p95_upper_us": 262143,
+    "samples": 10
+  },
+  "audio_late_samples": 0,
+  "audio_concealed_frames": 0,
+  "video_frame_to_decode": {
+    "p50_upper_us": 262143,
+    "p95_upper_us": 262143,
+    "samples": 10
+  },
+  "av_decode_skew": {
+    "p50_upper_us": 262143,
+    "p95_upper_us": 262143,
+    "samples": 10
+  },
+  "transport_tx_bytes": 103094,
+  "transport_rx_bytes": 93140,
+  "transport_tx_kbps": 39.268536425737565,
+  "transport_rx_kbps": 35.47705475287792,
+  "source_rms_dbfs": -24.93707506083517,
+  "captured_samples": 0,
+  "rx_frames": 334,
+  "tx_opus_bytes": 37940,
+  "rx_opus_bytes": 37722,
+  "tx_opus_kbps": 14.45135771230608,
+  "rx_opus_kbps": 14.36832144500817,
+  "rx_non_silent_frames": 334,
+  "capture_dropped_samples": 0,
+  "capture_missing_samples": 0,
+  "playback_dropped_samples": 0,
+  "playback_missing_samples": 0,
+  "playback_callback_peak_samples": 0,
+  "playback_lead_peak_us": 0,
+  "capture_peak_samples": 0,
+  "playback_peak_samples": 0,
+  "sequence_gaps": 0,
+  "late_packets": 0,
+  "decode_errors": 0,
+  "device_errors": 0,
+  "encode": {
+    "p50_upper_us": 2047,
+    "p95_upper_us": 2047,
+    "samples": 336
+  },
+  "decode": {
+    "p50_upper_us": 127,
+    "p95_upper_us": 127,
+    "samples": 334
+  },
+  "frame_to_decode": {
+    "p50_upper_us": 65535,
+    "p95_upper_us": 262143,
+    "samples": 334
+  },
+  "outcome": "duration reached"
+}

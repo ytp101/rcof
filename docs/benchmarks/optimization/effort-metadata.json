@@ -1,0 +1,4 @@
+{
+  "binary_sha256": "13bc471a0221185b652a4a6b409acf3a1f64155047d1e345804431d74eb320da",
+  "change_since_main_suite": "Added explicit DTX disable option and collapsed advanced GUI controls; default encoder behavior unchanged."
+}
