@@ -146,6 +146,11 @@ try:
  if args.profile=='constrained' and args.adaptive:
   assert all(json.loads((args.output/(name+'.json')).read_text())['video_quality_changes']>0 for name in ['a','b']),'adaptation did not run'
  print('PASS:',args.profile,args.quality,flush=True)
+except Exception:
+ # Child processes write the useful failure reason, not necessarily the parent.
+ for path in sorted(args.output.glob('*.log')):
+  print(f'\n--- {path.name} (last 6000 characters) ---\n{path.read_text(errors="replace")[-6000:]}',flush=True)
+ raise
 except KeyboardInterrupt:
  print('Demo interrupted by Ctrl+C. Saving call/link results and stopping owned processes.',flush=True)
 finally:
